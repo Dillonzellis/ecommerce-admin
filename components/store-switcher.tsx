@@ -31,7 +31,7 @@ export default function StoreSwitcher({
     value: item.id
   }));
 
-  const currentStore = formattedItems.find((item) => item.value === params.storeId);
+  const currentStore = formattedItems.find((item) => item.value === params.storeid);
 
   const [open, setOpen] = useState(false)
 
@@ -41,7 +41,6 @@ export default function StoreSwitcher({
   }
 
 
-  { console.log(currentStore) }
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
